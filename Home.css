@@ -1,0 +1,139 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;}
+body{
+    background-color: black;
+    height: 100vh;
+    }
+.interface{
+    max-width: 1280px;
+    
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+h2.titulo{
+    color: aliceblue;
+    font-size: 40px;
+    font-family: "Poppins", "sans-serif";
+
+}
+h2.titulo span{
+    color: aliceblue;
+}
+/* Estilo cabecario */
+header{
+    padding: 20px 8%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+}
+header a{
+    color: rgb(124, 124, 126);
+    text-decoration: none;
+
+}
+header nav ul{
+    list-style-type:none;
+
+}
+header nav ul li{
+    display: inline-block;
+    padding: 2% 170px; 
+}
+header a:hover{
+    color: aliceblue;
+    transform: scale(1.05);
+    display: inline-block;
+    transition: 300ms;
+}
+/* sobre*/
+section.sobre{
+    padding: 20px 10%;
+ }
+ section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+ }
+ section.sobre .flex .img-sobre img{
+    width: 250px;
+ }
+ .sobre .txt-sobre{
+    color: aliceblue;
+ }
+ .sobre .txt-sobre h2{
+    font-size: 45px ;
+    margin-bottom: 30px;
+ }
+ .sobre .txt-sobre p{
+    font-size: 18px;
+    margin:25px 0;
+ }
+ .sobre .txt-sobre h2 span{
+    display: block;
+ }.sobre .img-sobre img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top: 10px;
+    }
+    100%{
+        top:40px;
+    }
+
+}
+/* esrtilo box interface*/
+section.IA{
+    padding: 40px 4%;
+    
+
+}
+
+section.IA .flex{
+    gap: 60px;
+
+}
+.IA .interface-box{
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    margin-top: 25px;
+    border-radius: 20px;
+    transition: .2s;
+
+}
+.IA .interface-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #eaeef5ad;
+}
+.IA .interface-box h3{
+    font-size: 30px;
+    padding: 5px;
+    margin: 15px 0;
+}
+
+ /* */
+ footer{
+    color: aliceblue;
+    padding: 20px 4%;
+    box-shadow: 0 0 20px 5px #5082d8ad;
+ }
+ footer .line-foote-a {
+    padding: 6px 0;
+    border-top: 2px solid #5082d8ad;
+ }
+
+footer .line-footer .logo-footer{
+    padding: 10px;
+}
